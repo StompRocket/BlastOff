@@ -110,6 +110,12 @@ hr {
   color: #57606f;
 }
 
+.center-items {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 /* Buttons */
 
 

@@ -7,6 +7,8 @@
 .container {
   margin: auto;
   position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Mobile first queries */
@@ -93,7 +95,7 @@ a.nolink:hover {
   }
 }
 .column {
-  width: 27.06%;
+  width: 30%;
 
 }
 
@@ -110,7 +112,6 @@ footer.footer {
   background-color: #dfe4ea;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
   position: absolute;
   left: 0;
   bottom: 0;

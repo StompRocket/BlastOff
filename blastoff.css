@@ -122,24 +122,73 @@ hr {
 /* Buttons */
 
 .button {
-  border: 1px solid #000000;
+  border: 1px solid #8395a7;
   background: #ffffff;
-  padding: 7px 14px;
+  padding: 9px 18px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
   vertical-align: middle;
-  color: #000000;
+  color: #576574;
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 .button:hover {
-  border-color: #000000;
-  background: #f1f2f6;
+  border: 1.5px solid #000000;
   color: #000000;
 }
 .button:active {
-  border-top-color: #000000;
-  background: #f1f2f6;
+  border-color: #000000;
+  color: #000000;
+}
+
+.button.primary {
+  border: 1px solid #2cceea;
+  background: #2cceea;
+  padding: 9px 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+.button.primary:hover {
+  border: 1.5px solid #2cceea;
+  background: #17c0eb;
+  color: #ffffff;
+}
+.button.primary:active {
+  border-color: #2cceea;
+  background: #17c0eb;
+  color: #ffffff;
+}
+
+.button.dark {
+  border: 1px solid #2f3542;
+  background: #2f3542;
+  padding: 9px 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+.button.dark:hover {
+  border: 1.5px solid #474d59;
+  background: #474d59;
+  color: #ffffff;
+}
+.button.dark:active {
+  border-color: #474d59;
+  background: #474d59;
+  color: #ffffff;
 }
 
 /* Automatically snaps to bottom of screen */

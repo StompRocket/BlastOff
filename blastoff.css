@@ -68,6 +68,35 @@ h2 {
   font-weight: lighter;
 }
 
+a.nolink {
+  text-decoration: none;
+  color: #000000;
+}
+
+a.nolink:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* Grid System */
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 667px;) {
+  .row {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.column {
+  width: 27.06%;
+
+}
+
 /* Elements */
 
 body {

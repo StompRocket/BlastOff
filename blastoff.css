@@ -1,6 +1,7 @@
 /* @imports here */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 /* Responcive design */
 
@@ -16,7 +17,7 @@
 /* Larger than phone */
 @media screen and (min-width: 400px) {
   .container {
-    max-width: 360px;
+    max-width: 380px;
     width: auto;
   }
 }
@@ -24,7 +25,7 @@
 /* Larger than large phone */
 @media screen and (min-width: 550px) {
   .container {
-    max-width: 500px;
+    max-width: 520px;
     width: auto;
   }
 
@@ -85,6 +86,9 @@ a.nolink:hover {
 
 /* Grid System */
 
+.column {
+  width: 100%;
+}
 
 @media (max-width: 700px) {
   .row {
@@ -101,10 +105,7 @@ a.nolink:hover {
     justify-content: space-between;
   }
 }
-.column {
-  width: 30%;
 
-}
 
 /* Elements */
 
@@ -121,6 +122,21 @@ hr {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+pre {
+  border: 1px solid #a4b0be;
+  background: #dfe4ea;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: monospace;
+}
+
+code {
+  border: 1px solid #a4b0be;
+  background: #dfe4ea;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /* Buttons */

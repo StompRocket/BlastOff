@@ -69,6 +69,9 @@ h1 {
 h2 {
   font-weight: lighter;
 }
+h3 {
+  font-weight: normal;
+}
 
 a.nolink {
   text-decoration: none;
@@ -118,7 +121,26 @@ hr {
 
 /* Buttons */
 
-
+.button {
+  border: 1px solid #000000;
+  background: #ffffff;
+  padding: 7px 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #000000;
+}
+.button:hover {
+  border-color: #000000;
+  background: #f1f2f6;
+  color: #000000;
+}
+.button:active {
+  border-top-color: #000000;
+  background: #f1f2f6;
+}
 
 /* Automatically snaps to bottom of screen */
 

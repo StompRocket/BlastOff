@@ -106,6 +106,14 @@ body {
   margin: 0 0 100;
 }
 
+hr {
+  color: #57606f;
+}
+
+/* Buttons */
+
+
+
 /* Automatically snaps to bottom of screen */
 
 footer.footer {

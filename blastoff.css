@@ -1,0 +1,89 @@
+/* @imports here */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,700,700i');
+
+/* Responcive design */
+
+.container {
+  margin: auto;
+  position: relative;
+}
+
+/* Mobile first queries */
+
+/* Larger than phone */
+@media screen and (min-width: 400px) {
+  .container {
+    max-width: 360px;
+    width: auto;
+  }
+}
+
+/* Larger than large phone */
+@media screen and (min-width: 550px) {
+  .container {
+    max-width: 500px;
+    width: auto;
+  }
+
+}
+
+/* Larger than tablet */
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 700px;
+    width: auto;
+  }
+}
+
+/* Larger than desktop */
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 850px;
+    width: auto;
+  }
+}
+
+/* Larger than Desktop HD */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 950px;
+    width: auto;
+  }
+}
+
+/* Typography */
+
+html {
+  font-family: Montserrat;
+  font-weight: light;
+  min-height: 100%;
+  position: relative;
+}
+h1 {
+  font-weight: lighter;
+  font-size: 3rem;
+}
+h2 {
+  font-weight: lighter;
+}
+
+/* Elements */
+
+body {
+  padding: 25px;
+  margin: 0 0 100;
+}
+
+/* Automatically snaps to bottom of screen */
+
+footer.footer {
+  background-color: #dfe4ea;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}

@@ -27,17 +27,27 @@
 
 
 
-    <h3 id="buttons"><a href="#buttons" class="animated">Buttons:</a></h3>
+    <h3 id="buttons"><a href="#buttons" class="animated">Buttons and Links:</a></h3>
     <div class="row">
-      <div class="column one-third">
+      <div class="column one-fifth">
         <button class="button" href="#!">Default Button</button>
         <br /><br />
         <button class="button primary" href="#!"> Primary Button</button>
         <br /><br />
         <button class="button dark" href="#!">Dark Button</button>
       </div>
-      <div class="column two-thirds">
+      <div class="column one-fifth">
+        <br />
+        <a class="" href="#!">Default Link</a>
+        <br /> <br />
+        <a class="nolink" href="#!">Minimal Style Link</a>
+        <br /><br />
+        <a class="animated" href="#!">Animated Link</a>
+      </div>
+      <div class="column three-fifths">
         Blast Off contains multiple button styles. Simply apply the button class to an element to use.
+        <br /> You can also use different styles of links. The animated links will automatically disable
+        animation on touch screens.
         <script src="https://gist.github.com/swissChili/41c4a509e0cfb56d561b3d9082f73f63.js"></script>
       </div>
     </div>
@@ -182,13 +192,20 @@
       </div>
     </div>
 
-    <br />
-    <br />
-    yes
+    <h3><a id="footer" href="#footer" class="animated">Footer:</a></h3>
+
+    <p>
+      The Blast Off footer styling is minimal. It will, however stick to the bottom of the screen
+      if the content is not as long as the window, and will not overlap the content. If you wish, you may
+      add the <code>material</code> class to it to give it a slight top shadow, or <code>material inner</code> for
+      a slight inner shadow, that gives the effect that the footer is slightly below the content.
+    </p>
+
+    <script src="https://gist.github.com/swissChili/49b629023582d24d67ce0c2da5173d5b.js"></script>
 
   </div>
 
-  <footer class="footer">
+  <footer class="footer material inner parallax">
     <div class="container">
       <br />
       <div class="row">

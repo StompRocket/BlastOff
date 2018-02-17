@@ -137,6 +137,29 @@ a.nolink:hover {
   .column.two-thirds {
     width: 100%;
   }
+  .column.one-fourth {
+    width: 100%;
+  }
+
+  .column.three-fourths {
+    width: 100%;
+  }
+
+  .column.one-fifth {
+    width: 100%;
+  }
+
+  .column.two-fifths {
+    width: 100%;
+  }
+
+  .column.three-fifths {
+    width: 100%;
+  }
+
+  .column.four-fifths {
+    width: 100%;
+  }
 }
 @media (min-width: 701px) {
   .row {

@@ -88,6 +88,15 @@ a.nolink:hover {
 
 .column {
   width: 100%;
+  padding: 5px;
+}
+
+.column.one-third {
+  width: 33.333%;
+}
+
+.column.two-thirds {
+  width: 66.666%;
 }
 
 @media (max-width: 700px) {
@@ -95,6 +104,13 @@ a.nolink:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+  }
+  .column.one-third {
+    width: 100%;
+  }
+
+  .column.two-thirds {
     width: 100%;
   }
 }
@@ -137,6 +153,15 @@ code {
   background: #dfe4ea;
   border-radius: 5px;
   padding: 5px;
+}
+
+.box {
+  border: .5px solid #dfe4ea;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px #dfe4ea;
+     -moz-box-shadow: 0 8px 6px -6px #dfe4ea;
+          box-shadow: 0 8px 6px -6px #dfe4ea;
 }
 
 /* Buttons */

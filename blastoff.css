@@ -175,8 +175,6 @@ a.nolink:hover {
 body {
   padding: 0px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   margin: 0px;
   perspective: 1px;
   -webkit-perspective: 1px;
@@ -352,7 +350,6 @@ footer.footer {
   background-color: #dfe4ea;
   width: 100%;
   padding-top: 10px;
-  flex-shrink: 0;
 }
 
 footer.footer.material {
@@ -365,4 +362,11 @@ footer.footer.material.inner {
   -webkit-box-shadow: inset 0px 10px 5px -8px rgba(0,0,0,0.61);
   -moz-box-shadow:    inset 0px 10px 5px -8px rgba(0,0,0,0.61);
   box-shadow:         inset 0px 10px 5px -8px rgba(0,0,0,0.61);
+}
+
+/* Helpers */
+
+.nospacing {
+  line-height: 18px;
+
 }

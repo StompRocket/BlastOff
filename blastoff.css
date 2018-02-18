@@ -370,3 +370,7 @@ footer.footer.material.inner {
   line-height: 18px;
 
 }
+
+.fullwidth {
+  width: 100%;
+}

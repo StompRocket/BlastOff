@@ -312,8 +312,11 @@ a.animated:hover:before {
 .navbar {
   width: 100%;
   position: fixed;
+  background: #dfe4ea;
+  display: flex;
 }
 .navbar.fixed {
+  right: 0;
   left: 0;
   top: 0;
   position: fixed;

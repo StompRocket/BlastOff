@@ -60,6 +60,8 @@
 html {
   font-family: Montserrat;
   font-weight: light;
+  min-height: 100%;
+  position: relative;
   height: 100%;
   overflow: hidden;
 }
@@ -273,7 +275,7 @@ a.animated:hover:before {
   position: fixed;
   z-index: 99999;
   width: 100%;
-  height: 100%;
+  height: ;
   top: 0;
   left: 0;
   bottom: 0;
@@ -281,10 +283,11 @@ a.animated:hover:before {
   color: #333333;
   background: rgba(0, 0, 0, 0.8);
   opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
   pointer-events: none;
+  overflow: hidden;
 
 }
 .modal .modal-body {
@@ -306,8 +309,12 @@ a.animated:hover:before {
   text-decoration: none;
 }
 .modal:target {
-    opacity:1;
-    pointer-events: auto;
+  opacity:1;
+  pointer-events: auto;
+}
+.modal.open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Buttons */

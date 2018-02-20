@@ -262,6 +262,11 @@ a.animated:hover:before {
   transform: scaleX(1);
 }
 
+/* Table */
+
+table {
+  border
+}
 
 /* Modal */
 

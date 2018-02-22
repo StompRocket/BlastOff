@@ -272,6 +272,7 @@ table {
 
 .modal {
   position: fixed;
+  -webkit-position: fixed;
   z-index: 99999;
   width: 100%;
   height: ;
@@ -297,6 +298,7 @@ table {
   padding:20px;
   background-color:#FFF;
   position: relative;
+  -webkit-position: relative;
 }
 .modal .close {
   float: right;
@@ -317,6 +319,7 @@ table {
 .navbar {
   width: 100%;
   position: fixed;
+  -webkit-position: fixed;
   background: #dfe4ea;
   display: flex;
 }
@@ -325,6 +328,7 @@ table {
   left: 0;
   top: 0;
   position: fixed;
+  -webkit-position: fixed;
   width: 100%;
   z-index: 100;
   border-top: 0;

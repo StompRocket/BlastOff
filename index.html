@@ -3,32 +3,44 @@
 
 <head>
   <link rel="stylesheet" href="./blastoff.css" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blast Off! | A minimal CSS framework</title>
 </head>
 
 <body>
-  <nav class="navbar fixed material">
+  <nav class="navbar material">
     <div class="container">
       <div class="nav logo">
         <a class="nav link">Blast Off</a>
       </div>
       <div class="nav menu">
-        <a class="nav link">link 1</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/StompRocket/BlastOff" data-icon="octicon-star" data-show-count="true" aria-label="Star StompRocket/BlastOff on GitHub">Star</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <h1>Blast Off!</h1>
-    <h2>A Minimal UX-Focused CSS Framework Based on Flexbox</h2>
-
-
-
+    <div class="center-items">
+      <h1>Blast Off!</h1>
+      <p>A Minimal UX-Focused CSS Framework Based on Flexbox</p>
+      <br>
+      <button class="button primary"><i class="fas fa-download"></i> download scss </button>
+      <br>
+        <div class="flex-row">
+        <a class="github-button primary" href="https://github.com/StompRocket/BlastOff" data-icon="octicon-star" data-show-count="true" aria-label="Star StompRocket/BlastOff on GitHub">Star</a>
+        &nbsp;&nbsp;
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button primary" href="https://github.com/StompRocket/BlastOff/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork StompRocket/BlastOff on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <br>
     <h3 id="typography"><a class="animated" href="#typography">Typography:</a></h3>
 
     <div class="row">
-      <div class="column one-fifth nospacing">
+      <div class="column one-fifth">
         <h1>H1</h1>
         <h2>H2</h2>
         <h3>H3</h3>
@@ -50,36 +62,41 @@
       <div class="column three-fifths">
         <p>
           Blast Off uses <a target="_blank" class="animated" href="https://fonts.google.com/specimen/Montserrat">
-          <b>Montserrat</b></a> as it's default font. Montserrat features a unique and eye catching design which compliments the simplistic and thing style of Blast Off.
+          <b>Montserrat</b></a> as it's default font. Montserrat features a unique and eye catching design which compliments the simplistic style of Blast Off.
         </p>
         <script src="https://gist.github.com/swissChili/f6874be4103dc7625ca77de77321095d.js"></script>
       </div>
     </div>
 
 
-    <h3 id="helpers"><a class="animated" href="#helpers">Helpers:</a></h3>
+    <h3 id="helpers"><a class="animated" href="#helpers">Tables:</a></h3>
 
 
     <div class="row">
       <div class="column">
-        ree
+        Blast Off includes a simple table layout, perfect for displaying information
+        in an easily accessible way.
       </div>
       <div class="column">
         <table class="fullwidth">
           <tr>
+            <td> Lorum Ipsum </td>
+            <td> Bacon Flavored Linguini </td>
+          </tr>
+          <tr>
             <td>
-              1
+              Swedish Fish
             </td>
             <td>
-              2
+              German Narwhals
             </td>
           </tr>
           <tr>
             <td>
-              3
+              American Pigeons
             </td>
             <td>
-              4
+              Angular JS
             </td>
           </tr>
         </table>
@@ -265,6 +282,8 @@
       a slight top shadow, or <code>material inner</code> for a slight inner shadow, that gives the effect that the footer is slightly below the content.
     </p>
 
+    <pre><code>test test test</code></pre>
+
     <script src="https://gist.github.com/swissChili/49b629023582d24d67ce0c2da5173d5b.js"></script>
 
   </main>
@@ -289,6 +308,8 @@
       <br />
     </div>
   </footer>
-</body>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </html>

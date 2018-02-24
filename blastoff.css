@@ -36,11 +36,22 @@
     max-width: 950px;
     width: auto; } }
 /* Typography */
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+  margin-top: 0;
+  margin-bottom: 16px; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0; }
 
 html {
+  overflow-x: hidden;
   font-family: Montserrat;
   font-weight: light;
   min-height: 100%;
@@ -157,19 +168,16 @@ body {
   word-wrap: break-word; }
 
 hr {
-  color: #57606f; }
+  border-bottom-color: #eeeeee; }
 
 .center-items {
   align-items: center;
   display: flex;
-  justify-content: center; }
+  flex-direction: column; }
 
-pre {
-  border: 1px solid #a4b0be;
-  background: #f9f9f9;
-  border-radius: 5px;
-  padding: 10px;
-  font-family: monospace; }
+.flex-row {
+  display: flex;
+  flex-direction: row; }
 
 code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -260,7 +268,40 @@ a.animated:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
 
+img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff; }
+
 /* Table */
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+table th {
+  font-weight: bold; }
+
+td,
+th {
+  padding: 0; }
+
+table th,
+table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd; }
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc; }
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8; }
+
 /* Modal */
 .modal {
   position: fixed;
@@ -345,7 +386,7 @@ a.animated:hover:before {
   text-transform: uppercase; }
 
 .button:hover {
-  border: 1.5px solid #000000;
+  border: 1px solid #000000;
   color: #000000; }
 
 .button:active {
@@ -366,7 +407,6 @@ a.animated:hover:before {
   text-transform: uppercase; }
 
 .button.primary:hover {
-  border: 1.5px solid #2cceea;
   background: #17c0eb;
   color: #ffffff; }
 
@@ -389,7 +429,6 @@ a.animated:hover:before {
   text-transform: uppercase; }
 
 .button.dark:hover {
-  border: 1.5px solid #474d59;
   background: #474d59;
   color: #ffffff; }
 

@@ -4,6 +4,8 @@
 <head>
   <link rel="stylesheet" href="./blastoff.css" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blast Off! | A minimal CSS framework</title>
 </head>
@@ -282,7 +284,15 @@
       a slight top shadow, or <code>material inner</code> for a slight inner shadow, that gives the effect that the footer is slightly below the content.
     </p>
 
-    <pre><code>test test test</code></pre>
+    <pre><code class="css">pre>code {
+      padding: 0;
+      margin: 0;
+      font-size: 100%;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }</code></pre>
 
     <script src="https://gist.github.com/swissChili/49b629023582d24d67ce0c2da5173d5b.js"></script>
 
@@ -311,5 +321,7 @@
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </html>

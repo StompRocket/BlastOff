@@ -266,18 +266,15 @@ pre>code {
   word-break: normal;
   white-space: pre;
   background: transparent;
-  border: 0;
 }
 pre code {
   display: inline;
   max-width: auto;
   padding: 0;
   margin: 0;
-  overflow: visible;
+  overflow-x: auto;
   line-height: inherit;
   word-wrap: normal;
-  background-color: transparent;
-  border: 0;
 }
 pre code::before,
 pre code::after {

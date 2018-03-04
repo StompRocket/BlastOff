@@ -560,6 +560,72 @@ table tr:nth-child(2n) {
   box-shadow:         0px 3px 6px 0px rgba(30, 30, 30, 0.33);
 }
 
+/*Tooltips */
+
+[tooltip] {
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+
+[tooltip] {
+  border-width: 0px;
+}
+
+[tooltip]:focus {
+  outline: none;
+}
+
+[tooltip]::before,
+[tooltip]::after {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  -moz-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+  pointer-events: none;
+  overflow: visible;
+}
+
+[tooltip]::before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #2f3542;
+  color: #fff;
+  content: attr(tooltip);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .8rem;
+  line-height: 1.2;
+}
+
+[tooltip]::after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #2f3542;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 /* Buttons */
 
 .button {
@@ -634,6 +700,8 @@ table tr:nth-child(2n) {
   background: #474d59;
   color: #ffffff;
 }
+
+/* Inputs */
 
 /* Automatically snaps to bottom of screen */
 

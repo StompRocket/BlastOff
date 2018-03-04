@@ -13,15 +13,26 @@
 <body>
   <nav class="navbar material">
     <div class="container">
-      <div class="nav logo">
-        <a class="nav link">Blast Off</a>
+      <div class="nav-logo">
+        <a class="nav-link">Blast Off</a>
       </div>
-      <div class="nav menu">
+      <a class="nav-burger" href="#nav-mobile"><i class="fas fa-bars"></i></a>
+      <div class="nav-menu">
         <!-- Place this tag where you want the button to render. -->
         <a class="github-button" href="https://github.com/StompRocket/BlastOff" data-icon="octicon-star" data-show-count="true" aria-label="Star StompRocket/BlastOff on GitHub">Star</a>
       </div>
     </div>
   </nav>
+
+  <div class="nav-mobile" id="nav-mobile">
+    <div class="modal-background">
+
+    </div>
+    <div class="nav-body">
+      <a class="nav-close" href="#!"><i class="fa fa-times"></i></a>
+      <h1>Blast Off</h1>
+    </div>
+  </div>
 
   <main class="container">
     <div class="center-items">
@@ -39,6 +50,33 @@
     </div>
     <br>
     <br>
+    <h3 id="navbar"><a class="animated" href="#navbar">Navbar:</a></h3>
+    <div class="row">
+      <div class="column">
+        <script src="https://gist.github.com/swissChili/88b863f2d3d06a664797eda0a22fafe7.js"></script>
+      </div>
+      <div class="column">
+        <p>
+          The Blast Off navbar is fully responsive, even on mobile. The default
+          menu will disappear on small screans and be replaced by a menu icon
+          which can be pressed to open the navigation pannel.
+        </p>
+        <p>
+          The navigation pannel functions
+          similarly to a modal in that it is opened when active. Make sure to link
+          whatever you want to open the nav to it's ID, otherwise it will not open.
+        </p>
+        <p>
+          The navigation panel is highly customizable, and can be altered to your
+          preferences. For example, you could put a dropdown, sign up form, or anything
+          else in the nav menu, to make it easier for mobile users to access.
+        </p>
+        <p>
+          Try resizing this screen, or viewing it on a mobile device to see the responsive
+          navbar in effect.
+        </p>
+      </div>
+    </div>
     <h3 id="typography"><a class="animated" href="#typography">Typography:</a></h3>
 
     <div class="row">
@@ -292,7 +330,7 @@
 
   </main>
 
-  <footer class="footer material inner parallax">
+  <footer class="footer material inner">
     <div class="container">
       <br />
       <div class="row">

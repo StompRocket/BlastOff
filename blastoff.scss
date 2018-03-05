@@ -552,6 +552,10 @@ table tr:nth-child(2n) {
   pointer-events: auto;
 }
 
+.navbar.white {
+  background-color: #fff;
+}
+
 
 
 .navbar.material {
@@ -726,6 +730,9 @@ footer.footer.material.inner {
   -webkit-box-shadow: inset 0px 10px 5px -8px rgba(0,0,0,0.33);
   -moz-box-shadow:    inset 0px 10px 5px -8px rgba(0,0,0,0.33);
   box-shadow:         inset 0px 10px 5px -8px rgba(0,0,0,0.33);
+}
+.footer.white {
+  background-color: #fff;
 }
 
 /* Helpers */

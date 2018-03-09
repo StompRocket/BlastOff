@@ -10,6 +10,8 @@ $gray-accent: #f9f9f9;
 
 $primary: #2cceea;;
 $primary-accent: #17c0eb;
+$blue: #4949f4;
+$blue-accent: #3434ef;
 
 
 /* Responsive design */
@@ -115,14 +117,44 @@ h6 {
   font-weight: 600;
 }
 
-a.nolink {
+a {
+  color: $blue;
   text-decoration: none;
-  color: #000000;
+  transition: all .2s ease-in;
+
+  &:hover {
+    transition: all .2s ease-out;
+    box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 $blue inset ;
+  }
+
+  &::selection {
+    color: white; background: $blue;
+    text-shadow: none;
+  }
+  &:visited {
+    color: $blue;
+    text-decoration: none;
+    text-shadow: none;
+  }
 }
 
-a.nolink:hover {
-  text-decoration: underline;
-  color: #000000;
+a.minimal {
+  color: $blue;
+  text-decoration: none;
+  box-shadow: none!important;
+  &:hover {
+    text-decoration: underline;
+    color: $blue;
+  }
+
+  &::selection {
+    color: white; background: $blue;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $blue;
+    text-decoration: underline;
+  }
 }
 
 /* Grid System */
@@ -703,6 +735,11 @@ table tr:nth-child(2n) {
   border-color: #474d59;
   background: #474d59;
   color: #ffffff;
+}
+
+a.button {
+  text-decoration: none!important;
+  box-shadow: none!important;
 }
 
 /* Inputs */

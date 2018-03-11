@@ -306,6 +306,7 @@ pre>code {
   background: transparent;
 }
 pre code {
+  all: unset;
   display: inline;
   max-width: auto;
   padding: 0;
@@ -322,7 +323,7 @@ pre code::after {
 .box {
   border: .5px solid $gray-accent;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.19);
      -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.19);
           box-shadow: 0 8px 6px -6px rgba(0,0,0,0.19);
@@ -342,6 +343,13 @@ pre code::after {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
      -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.box .container {
+  padding: 10px;
+}
+.box.container {
+  padding: 10px;
 }
 
 a.animated {
@@ -471,7 +479,6 @@ table tr:nth-child(2n) {
   background: $gray-accent;
   overflow: hidden;
   padding: 15px;
-  align-items: center;
 }
 .navbar.fixed {
   right: 0;
@@ -673,7 +680,7 @@ table tr:nth-child(2n) {
   border-radius: 5px;
   text-decoration: none;
   vertical-align: middle;
-  color: #576574;
+  color: #576574!important;
   font-size: .8rem;
   text-transform: uppercase;
 }
@@ -700,7 +707,7 @@ table tr:nth-child(2n) {
   border-radius: 5px;
   text-decoration: none;
   vertical-align: middle;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: .8rem;
   text-transform: uppercase;
 }
@@ -723,7 +730,7 @@ table tr:nth-child(2n) {
   border-radius: 5px;
   text-decoration: none;
   vertical-align: middle;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: .8rem;
   text-transform: uppercase;
 }

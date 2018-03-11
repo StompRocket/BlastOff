@@ -41,7 +41,9 @@
       <h1>Blast Off</h1>
       <p>A Minimal UX-Focused CSS Framework Based on Flexbox</p>
       <br>
-      <a class="button primary" href="blastoff.scss"><i class="fas fa-download"></i> download scss </a>
+      <span class="input-group"><button class="button primary"><i class="fas fa-download"></i></button></span>
+
+      <br />
       <br />
       <div class="flex-row">
         <a class="github-button primary" href="https://github.com/StompRocket/BlastOff" data-icon="octicon-star" data-show-count="true" aria-label="Star StompRocket/BlastOff on GitHub">Star</a>
@@ -55,6 +57,7 @@
     <h3 id="navbar"><a class="animated" href="#navbar">Navbar:</a></h3>
     <div class="row">
       <div class="column">
+        <pre><code></code></pre>
         <script src="https://gist.github.com/swissChili/88b863f2d3d06a664797eda0a22fafe7.js"></script>
       </div>
       <div class="column">
@@ -157,8 +160,11 @@
 
       </div>
       <div class="modal-body box material deep">
-        <a class="close" href="#!">X</a>
-        <h1>Modal Title</h1>
+        <div class="container">
+          <a class="close" href="#!">X</a>
+          <h1>Modal Title</h1>
+        </div>
+
       </div>
     </div>
 
@@ -192,12 +198,12 @@
 
     <div class="row">
       <div class="column">
-        <div class="box">
+        <div class="box container">
           Column
         </div>
       </div>
       <div class="column">
-        <div class="box">
+        <div class="box container">
           Column
         </div>
       </div>
@@ -205,12 +211,12 @@
 
     <div class="row">
       <div class="column two-fifths">
-        <div class="box">
+        <div class="box container">
           Column Two Fifths
         </div>
       </div>
       <div class="column three-fifths">
-        <div class="box">
+        <div class="box container">
           Column Three Fifths
         </div>
       </div>
@@ -218,12 +224,12 @@
 
     <div class="row">
       <div class="column one-third">
-        <div class="box">
+        <div class="box container">
           Column One Third
         </div>
       </div>
       <div class="column two-thirds">
-        <div class="box">
+        <div class="box container">
           Column Two Thirds
         </div>
       </div>
@@ -231,12 +237,12 @@
 
     <div class="row">
       <div class="column one-fourth">
-        <div class="box">
+        <div class="box container">
           Column One Fourth
         </div>
       </div>
       <div class="column three-fourths">
-        <div class="box">
+        <div class="box container">
           Column Three Fourths
         </div>
       </div>
@@ -244,12 +250,12 @@
 
     <div class="row">
       <div class="column one-fifth">
-        <div class="box">
+        <div class="box container">
           Column One Fifth
         </div>
       </div>
       <div class="column four-fifths">
-        <div class="box">
+        <div class="box container">
           Column Four Fifths
         </div>
       </div>
@@ -298,22 +304,37 @@
     <h3 id="boxes"><a href="#boxes" class="animated">Boxes:</a></h3>
     <p>
       Blast Off contains multiple box styles. Each of which can be easily used on a <code>div</code> element.
+      Add the <code>container</code> class to a box to give it padding, or use a div with the <code>container</code>
+      class inside it to give padding to only certain elements.
     </p>
 
     <div class="row">
       <div class="column">
-        <div class="box">
+        <div class="box container">
           This is a simple box. It has light shadows, and is perfect for a minimalistic design.
         </div>
         <br />
-        <div class="box material">
+        <div class="box material container">
           This is a material design box. It has sharp corners, and hard shadows to give it a distinctive feel.
         </div>
         <br />
-        <div class="box material deep">
+        <div class="box material deep container">
           This is a deep material design box. It is elevated above the others to make it stand out.
         </div>
         <br />
+        <div class="box material">
+          <div class="container">
+            <h4>Box with image</h4>
+          </div>
+          <img src="box img.jpg" />
+          <div class="container">
+            This is an example of how you can use the <code>container</code> class
+            on something inside the box to give only certain elements padding.
+            <br />
+            <br />
+            <small>Photo by <a href="https://unsplash.com/@justinbissonbeck">Justin Bisson Beck</a> on <a href="https://unsplash.com/">Unsplash</a></small>
+          </div>
+        </div>
       </div>
       <div class="column">
         <script src="https://gist.github.com/swissChili/5c25fcf4b848173d6319504809980be0.js"></script>
@@ -356,7 +377,5 @@
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
+</body>
 </html>

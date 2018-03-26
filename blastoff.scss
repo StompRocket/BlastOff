@@ -348,9 +348,8 @@ pre code::after {
 .box .container {
   padding: 10px;
 }
-.box.container {
-  padding: 10px;
-}
+
+
 
 a.animated {
   position: relative;
@@ -479,6 +478,9 @@ table tr:nth-child(2n) {
   background: $gray-accent;
   overflow: hidden;
   padding: 15px;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
 }
 .navbar.fixed {
   right: 0;
@@ -486,6 +488,11 @@ table tr:nth-child(2n) {
   top: 0;
   position: fixed;
   z-index: 50;
+}
+.nav-link {
+  position: absolute;
+  top: 50%;
+  transition: translateY(-50%);
 }
 .nav-logo {
   float: left;
@@ -698,6 +705,7 @@ table tr:nth-child(2n) {
   outline: none;
 }
 
+
 .button.primary {
   border: 1px solid $primary;
   background: $primary;
@@ -720,7 +728,6 @@ table tr:nth-child(2n) {
   background: $primary-accent;
   color: #ffffff;
 }
-
 .button.dark {
   border: 1px solid #2f3542;
   background: #2f3542;
@@ -748,6 +755,31 @@ a.button {
   text-decoration: none!important;
   box-shadow: none!important;
 }
+
+
+.button.blue {
+  border: 1px solid $blue;
+  background: $blue;
+  padding: 9px 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #ffffff !important;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+.button.blue:hover {
+  background: $blue-accent;
+  color: #ffffff;
+}
+.button.blue:active {
+  border-color: $blue;
+  background: $blue-accent;
+  color: #ffffff;
+}
+
 
 /* Inputs */
 

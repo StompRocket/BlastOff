@@ -4,8 +4,6 @@
 <head>
   <link rel="stylesheet" href="./blastoff.css" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blast Off! | A minimal CSS framework</title>
 </head>
@@ -40,7 +38,7 @@
       <br />
       <img src="logo-icon.png" width="33%"/>
       <h1>Blast Off</h1>
-      <p>A Minimal UX-Focused CSS Framework Based on Flexbox</p>
+      <p>A Minimal UX-Focused CSS Framework Powered By Flexbox</p>
       <br>
       <span class="multi-input">
         <a class="button input primary" href="blastoff.scss" download="blastoff.scss">SCSS</a>
@@ -62,8 +60,24 @@
     <h3 id="navbar"><a class="animated" href="#navbar">Navbar:</a></h3>
     <div class="row">
       <div class="column">
-        <pre><code></code></pre>
-        <script src="https://gist.github.com/swissChili/88b863f2d3d06a664797eda0a22fafe7.js"></script>
+        <pre class="html"><code>&lt;nav class=&quot;navbar material&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;nav-logo&quot;&gt;
+      &lt;a class=&quot;nav-link&quot;&gt;Blast Off&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;a class=&quot;nav-burger&quot; href=&quot;#nav-mobile&quot;&gt;&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;nav-menu&quot;&gt;
+      &lt;a class=&quot;animated&quot;&gt;Menu Items!&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;nav-mobile&quot; id=&quot;nav-mobile&quot;&gt;
+  &lt;div class=&quot;nav-body&quot;&gt;
+    &lt;a class=&quot;nav-close&quot; href=&quot;#!&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;h1&gt;Blast Off&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
       <div class="column">
         <p>
@@ -114,7 +128,10 @@
           Blast Off uses <a target="_blank" class="animated" href="https://fonts.google.com/specimen/Montserrat">
           <b>Montserrat</b></a> as it's default font. Montserrat features a unique and eye catching design which compliments the simplistic style of Blast Off.
         </p>
-        <script src="https://gist.github.com/swissChili/f6874be4103dc7625ca77de77321095d.js"></script>
+        <pre><code>&lt;h1&gt;H1&lt;/h1&gt; &lt;h2&gt;H2&lt;/h2&gt; &lt;h3&gt;H3&lt;/h3&gt;
+&lt;h4&gt;H4&lt;/h4&gt; &lt;h5&gt;H5&lt;/h5&gt; &lt;h6&gt;H6&lt;/h6&gt;
+&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italics&lt;/i&gt;
+&lt;u&gt;Underline&lt;/u&gt; &lt;s&gt;Strikethrough&lt;/s&gt;</code></pre>
       </div>
     </div>
 
@@ -193,7 +210,12 @@
       <div class="column three-fifths">
         Blast Off contains multiple button styles. Simply apply the button class to an element to use.
         <br /> You can also use different styles of links. The animated links will automatically disable animation on touch screens.
-        <script src="https://gist.github.com/swissChili/41c4a509e0cfb56d561b3d9082f73f63.js"></script>
+        <pre class="html"><code>&lt;button class=&quot;button&quot; href=&quot;#!&quot;&gt;Default Button&lt;/button&gt;
+&lt;button class=&quot;button primary&quot; href=&quot;#!&quot;&gt; Primary Button&lt;/button&gt;
+&lt;button class=&quot;button dark&quot; href=&quot;#!&quot;&gt;Dark Button&lt;/button&gt;
+&lt;a class=&quot;&quot; href=&quot;#!&quot;&gt;Default Link&lt;/a&gt;
+&lt;a class=&quot;nolink&quot; href=&quot;#!&quot;&gt;Minimal Style Link&lt;/a&gt;
+&lt;a class=&quot;animated&quot; href=&quot;#!&quot;&gt;Animated Link&lt;/a&gt;</code></pre>
       </div>
     </div>
 
@@ -269,7 +291,18 @@
     <div class="row">
       <div class="column">
         <br />
-        <script src="https://gist.github.com/swissChili/9225a1319c1065f4d70b243e5d5c395a.js"></script>
+        <pre class="html"><code>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;column&quot;&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    Column
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;column&quot;&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    Column
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
       <div class="column">
         <p>
@@ -342,7 +375,31 @@
         </div>
       </div>
       <div class="column">
-        <script src="https://gist.github.com/swissChili/5c25fcf4b848173d6319504809980be0.js"></script>
+        <pre><code>&lt;div class=&quot;box&quot;&gt;
+  Default Box
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;box material&quot;&gt;
+  Material Box
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;box material deep&quot;&gt;
+  Deep Material Box
+&lt;/div&gt;
+
+&lt;div class=&quot;box material&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h4&gt;Box with image&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;img src=&quot;box img.jpg&quot; /&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    This is an example of how you can use the &lt;code&gt;container&lt;/code&gt; class
+    on something inside the box to give only certain elements padding.
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;small&gt;Photo by &lt;a href=&quot;https://unsplash.com/@justinbissonbeck&quot;&gt;Justin Bisson Beck&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt;&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
 
@@ -353,8 +410,9 @@
       a slight top shadow, or <code>material inner</code> for a slight inner shadow, that gives the effect that the footer is slightly below the content.
     </p>
 
-
-    <script src="https://gist.github.com/swissChili/49b629023582d24d67ce0c2da5173d5b.js"></script>
+    <pre class="html"><code>&lt;footer class=&quot;footer&quot;&gt;
+  Material Design footer with inner shadow
+&lt;/footer&gt;</code></pre>
 
   </main>
 
@@ -382,5 +440,7 @@
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

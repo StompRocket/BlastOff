@@ -233,6 +233,12 @@ pre > code {
   white-space: pre;
   background: transparent; }
 
+pre[language]::after {
+  content: attr(language);
+  position: absolute;
+  z-index: 10;
+  color: #fff; }
+
 pre code {
   all: unset;
   display: inline;
@@ -247,6 +253,67 @@ pre code::before,
 pre code::after {
   content: normal; }
 
+/* highlight.js highlighting */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #222;
+  border-radius: 5px; }
+
+.hljs,
+.hljs-subst {
+  color: #aaa; }
+
+.hljs-section {
+  color: #fff; }
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #444; }
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-regexp {
+  color: #ffcc33; }
+
+.hljs-number,
+.hljs-addition {
+  color: #00cc66; }
+
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-template-variable,
+.hljs-attribute,
+.hljs-link {
+  color: #32aaee; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #6644aa; }
+
+.hljs-title,
+.hljs-variable,
+.hljs-deletion,
+.hljs-template-tag {
+  color: #bb1166; }
+
+.hljs-section,
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+/* end highlighting */
 .box {
   border: 2px solid rgba(189, 195, 199, 0.5);
   border-radius: 10px;

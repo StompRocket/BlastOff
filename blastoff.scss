@@ -6,10 +6,10 @@
 /* SCSS Variables */
 
 $gray-accent: #f9f9f9;
+$gray-outline: rgba(189, 195, 199, .5);
 
-
-$primary: #2cceea;;
-$primary-accent: #17c0eb;
+$primary: #778beb;
+$primary-accent: #546de5;
 $blue: #4949f4;
 $blue-accent: #3434ef;
 
@@ -121,6 +121,7 @@ a {
   color: $blue;
   text-decoration: none;
   transition: all .2s ease-in;
+  cursor: pointer;
 
   &:hover {
     transition: all .2s ease-out;
@@ -321,28 +322,25 @@ pre code::after {
 }
 
 .box {
-  border: .5px solid $gray-accent;
+  border: 2px solid $gray-outline;
   border-radius: 10px;
   padding: 0px;
-  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.19);
-     -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.19);
-          box-shadow: 0 8px 6px -6px rgba(0,0,0,0.19);
 }
 
 .box.material {
   border: .5px solid $gray-accent;
   border-radius: 3px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-     -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .box.material.deep {
   border: .5px solid $gray-accent;
   border-radius: 3px;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-     -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+     -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .box .container {
@@ -496,9 +494,9 @@ table tr:nth-child(2n) {
 
 
 .navbar.material {
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(30, 30, 30, 0.33);
-  -moz-box-shadow:    0px 3px 6px 0px rgba(30, 30, 30, 0.33);
-  box-shadow:         0px 3px 6px 0px rgba(30, 30, 30, 0.33);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  -moz-box-shadow:    0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow:         0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .nav-burger {
@@ -683,6 +681,8 @@ table tr:nth-child(2n) {
   color: #576574!important;
   font-size: .8rem;
   text-transform: uppercase;
+  transition: all .2s ease-out;
+  cursor: pointer;
 }
 .button:hover {
   border: 1px solid #000000;
@@ -794,6 +794,7 @@ a.button {
 
 .multi-input {
   height: min-content;
+  white-space: nowrap;
 }
 
 .multi-input .input {

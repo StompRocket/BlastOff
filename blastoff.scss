@@ -14,12 +14,15 @@ $primary-accent: #546de5;
 $blue: #4949f4;
 $blue-accent: #3434ef;
 
+$dark: rgb(5, 10, 20);
+$dark-accent: rgb(20, 15, 25);
+
 
 /* Responsive design */
 
 .container {
   margin: auto;
-    position: relative;
+  position: relative;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -99,9 +102,13 @@ html {
   overflow-x: hidden;
   font-family: IBM Plex Sans;
   font-weight: light;
+  font-size: 1rem;
   min-height: 100%;
   height: 100%;
   width: 100%;
+}
+p {
+    font-size: 1rem;
 }
 h1 {
   font-size: 3rem;
@@ -271,7 +278,7 @@ body {
   line-height: 1.5;
   color: #333;
   font-family: IBM Plex Sans;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
   word-wrap: break-word;
   overflow-x: hidden;
@@ -340,77 +347,63 @@ pre code {
 pre.box code {
     display: block;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 /* highlight.js highlighting */
+
+.hljs * {
+    opacity: .8;
+}
+.hljs-comment, .hljs-quote {
+    font-style: italic;
+    font-weight: 400;
+    opacity: .5;
+}
+.hljs-name, .hljs-selector-id, .hljs-selector-class, .hljs-regexp, .hljs-deletion {
+    font-weight: 500;
+}
+.hljs-variable, .hljs-template-variable, .hljs-tag {
+    font-weight: 600;
+}
+.hljs-number, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link {
+    font-weight: 400;
+    font-style: italic;
+    opacity: .6;
+}
+.hljs-attribute {
+    font-weight: 700;
+}
+.hljs-string,  .hljs-symbol, .hljs-bullet, .hljs-addition {
+    font-weight: 400;
+    font-style: italic;
+}
+.hljs-title, .hljs-section {
+    opacity: 1;
+    font-weight: 500;
+    font-style: underline;
+}
+.hljs-keyword, .hljs-built_in, .hljs-selector-tag {
+    font-weight: 700;
+    opacity: 1;
+}
 .hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #222;
-  border-radius: 5px;
+    display: block;
+    overflow-x: auto;
+    background: $dark;
+    padding: 1em;
+    color: #fff;
+    font-size: 1rem;
+    font-family: IBM Plex Mono;
+    font-variant-ligatures: normal;
+    font-weight: 500;
 }
-
-.hljs,
-.hljs-subst {
-  color: #aaa
-}
-
-.hljs-section {
-  color: #fff
-}
-
-.hljs-comment,
-.hljs-quote,
-.hljs-meta {
-  color: #444
-}
-
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-regexp {
-  color: #ffcc33
-}
-
-.hljs-number,
-.hljs-addition {
-  color: #00cc66
-}
-
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-template-variable,
-.hljs-attribute,
-.hljs-link {
-  color: #32aaee
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class {
-  color: #6644aa
-}
-
-.hljs-title,
-.hljs-variable,
-.hljs-deletion,
-.hljs-template-tag {
-  color: #bb1166
-}
-
-.hljs-section,
-.hljs-doctag,
-.hljs-strong {
-  font-weight: bold
-}
-
 .hljs-emphasis {
-  font-style: italic
+    font-weight: 700;
+}
+.hljs-strong {
+    font-weight: 700;
+    opacity: 1;
 }
 /* end highlighting */
 
@@ -436,13 +429,12 @@ pre.box code {
 }
 
 .box .container {
-  padding: 10px;
+  padding: 1em;
 }
 
 .box.container {
-  padding: 10px;
+  padding: 1em;
 }
-
 
 
 a.animated {
@@ -586,9 +578,7 @@ table tr:nth-child(2n) {
 
 
 .navbar.material {
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
-  -moz-box-shadow:    0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
-  box-shadow:         0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
 }
 
 .nav-burger {
@@ -813,7 +803,7 @@ table tr:nth-child(2n) {
 }
 .button.dark {
   border: 1px solid #2f3542;
-  background: #2f3542;
+  background: $dark;
   padding: 9px 18px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -824,12 +814,12 @@ table tr:nth-child(2n) {
   font-size: 1rem;
 }
 .button.dark:hover {
-  background: #474d59;
+  background: $dark-accent;
   color: #ffffff;
 }
 .button.dark:active {
-  border-color: #474d59;
-  background: #474d59;
+  border-color: $dark-accent;
+  background: $dark-accent;
   color: #ffffff;
 }
 

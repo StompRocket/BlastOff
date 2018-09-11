@@ -1,4 +1,6 @@
 # BlastOff
+## This is the v1 branch of BlastOff, please note that this branch is actively being developed, and everything is prone to change. branch master holds a snapshot of pre-v1 development.
+
 Blast Off is a minimal, modern pure-CSS framework built on Flexbox. Feel free to download the code and try it yourself.
 The syntax is easy to understand and build uppon, and it provides everything you need to get started. To view a full documentation and list of features, please visit [blastoff.stomprocket.io](https://blastoff.stomprocket.io)
 

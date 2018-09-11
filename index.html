@@ -2,445 +2,105 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="./blastoff.css" />
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blast Off! | A minimal CSS framework</title>
+    <link rel="stylesheet" href="./blastoff.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blast Off! | A minimal CSS framework</title>
 </head>
 
 <body>
-  <nav class="navbar material white">
-    <div class="container">
-      <div class="nav-logo">
-        <a class="nav-link" href="#!"><img src="logo-wordmark.png" height="30px"/></a>
-      </div>
-      <a class="nav-burger" href="#nav-mobile"><i class="fas fa-bars"></i></a>
-      <div class="nav-menu">
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button nav-link" href="https://github.com/StompRocket/BlastOff" data-icon="octicon-star" data-show-count="false" aria-label="Star StompRocket/BlastOff on GitHub">Star</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="nav-mobile" id="nav-mobile">
-    <div class="modal-background">
-
-    </div>
-    <div class="nav-body">
-      <a class="nav-close" href="#!"><i class="fa fa-times"></i></a>
-      <img src="logo-wordmark.png" />
-    </div>
-  </div>
-
-  <main class="container">
-    <div class="center-items">
-      &nbsp;
-      <br />
-      <img src="logo-icon.png" width="33%"/>
-      <h1>Blast Off</h1>
-      <p>A Minimal UX-Focused CSS Framework Powered By Flexbox</p>
-      <br>
-      <span class="multi-input">
-        <a class="button input primary" href="blastoff.scss" download="blastoff.scss">SCSS</a>
-        <a class="button input primary" href="blastoff.css" download="blastoff.scss">CSS</a>
-        <a class="button input primary" href="blastoff.min.css" download="blastoff.scss">Minified CSS</a>
-      </span>
-
-      &nbsp;
-      <br />
-      <div class="flex-row">
-        <a class="github-button primary" href="https://github.com/StompRocket/BlastOff" data-icon="octicon-star" data-show-count="false" aria-label="Star StompRocket/BlastOff on GitHub">Star</a>
-        &nbsp;&nbsp;
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button primary" href="https://github.com/StompRocket/BlastOff/fork" data-icon="octicon-repo-forked" data-show-count="false" aria-label="Fork StompRocket/BlastOff on GitHub">Fork</a>
-      </div>
-    </div>
-    <br>
-    <br>
-    <h3 id="navbar"><a class="animated" href="#navbar">Navbar:</a></h3>
-    <div class="row">
-      <div class="column">
-        <pre class="html"><code>&lt;nav class=&quot;navbar material&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;nav-logo&quot;&gt;
-      &lt;a class=&quot;nav-link&quot;&gt;Blast Off&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;a class=&quot;nav-burger&quot; href=&quot;#nav-mobile&quot;&gt;&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;div class=&quot;nav-menu&quot;&gt;
-      &lt;a class=&quot;animated&quot;&gt;Menu Items!&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-
-&lt;div class=&quot;nav-mobile&quot; id=&quot;nav-mobile&quot;&gt;
-  &lt;div class=&quot;nav-body&quot;&gt;
-    &lt;a class=&quot;nav-close&quot; href=&quot;#!&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;h1&gt;Blast Off&lt;/h1&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-      <div class="column">
-        <p>
-          The Blast Off navbar is fully responsive, even on mobile. The default
-          menu will disappear on small screans and be replaced by a menu icon
-          which can be pressed to open the navigation pannel.
-        </p>
-        <p>
-          The navigation pannel functions
-          similarly to a modal in that it is opened when active. Make sure to link
-          whatever you want to open the nav to it's ID, otherwise it will not open.
-        </p>
-        <p>
-          The navigation panel is highly customizable, and can be altered to your
-          preferences. For example, you could put a dropdown, sign up form, or anything
-          else in the nav menu, to make it easier for mobile users to access.
-        </p>
-        <p>
-          Try resizing this screen, or viewing it on a mobile device to see the responsive
-          navbar in effect.
-        </p>
-      </div>
-    </div>
-    <h3 id="typography"><a class="animated" href="#typography">Typography:</a></h3>
-
-    <div class="row">
-      <div class="column one-fifth">
-        <h1>H1</h1>
-        <h2>H2</h2>
-        <h3>H3</h3>
-        <h4>H4</h4>
-        <h5>H5</h5>
-        <h6>H6</h6>
-      </div>
-      <div class="column one-fifth nospacing">
-        <br />
-        <br />
-        <b>Bold</b>
-        <br /><br />
-        <i>Italics</i>
-        <br /><br />
-        <s>Strike Through</s>
-        <br /><br />
-        <u>Underline</u>
-      </div>
-      <div class="column three-fifths">
-        <p>
-          Blast Off uses <a target="_blank" class="animated" href="https://fonts.google.com/specimen/Montserrat">
-          <b>Montserrat</b></a> as it's default font. Montserrat features a unique and eye catching design which compliments the simplistic style of Blast Off.
-        </p>
-        <pre><code>&lt;h1&gt;H1&lt;/h1&gt; &lt;h2&gt;H2&lt;/h2&gt; &lt;h3&gt;H3&lt;/h3&gt;
-&lt;h4&gt;H4&lt;/h4&gt; &lt;h5&gt;H5&lt;/h5&gt; &lt;h6&gt;H6&lt;/h6&gt;
-&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italics&lt;/i&gt;
-&lt;u&gt;Underline&lt;/u&gt; &lt;s&gt;Strikethrough&lt;/s&gt;</code></pre>
-      </div>
-    </div>
-
-
-    <h3 id="helpers"><a class="animated" href="#helpers">Tables:</a></h3>
-
-
-    <div class="row">
-      <div class="column">
-        Blast Off includes a simple table layout, perfect for displaying information
-        in an easily accessible way.
-      </div>
-      <div class="column">
-        <table class="fullwidth">
-          <tr>
-            <td> Lorum Ipsum </td>
-            <td> Bacon Flavored Linguini </td>
-          </tr>
-          <tr>
-            <td>
-              Swedish Fish
-            </td>
-            <td>
-              German Narwhals
-            </td>
-          </tr>
-          <tr>
-            <td>
-              American Pigeons
-            </td>
-            <td>
-              Angular JS
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-
-    <h3 id="modal"><a class="animated" href="#modal">Modals:</a></h3>
-    <br />
-
-    <a class="button" href="#demomodal">Launch Modal</a>
-
-    <br />
-
-    <div class="modal" id="demomodal">
-      <div class="modal-background">
-
-      </div>
-      <div class="modal-body box material deep">
+    <nav class="navbar material white">
         <div class="container">
-          <a class="close" href="#!">X</a>
-          <h1>Modal Title</h1>
+            <div class="nav-logo">
+                <a href="/"><h3>Blast Off</h3></a>
+            </div>
+            <a class="nav-burger" href="#nav-mobile"><i class="fas fa-bars"></i></a>
+            <div class="nav-menu">
+                <h3>
+                    <a href="https://github.com/StompRocket/BlastOff"><i class="fab fa-github"></i></a>
+                </h3>
+            </div>
         </div>
+    </nav>
 
-      </div>
+    <div class="nav-mobile" id="nav-mobile">
+        <div class="modal-background">
+
+        </div>
+        <div class="nav-body">
+            <a class="nav-close" href="#!"><i class="fa fa-times"></i></a>
+            <img src="logo-wordmark.png" />
+        </div>
     </div>
 
-    <h3 id="buttons"><a href="#buttons" class="animated">Buttons and Links:</a></h3>
-    <div class="row">
-      <div class="column one-fifth">
-        <button class="button" href="#!">Default Button</button>
-        <br /><br />
-        <button class="button primary" href="#!"> Primary Button</button>
-        <br /><br />
-        <button class="button dark" href="#!">Dark Button</button>
-      </div>
-      <div class="column one-fifth">
-        <br />
-        <a class="" href="#!">Default Link</a>
-        <br /> <br />
-        <a class="minimal" href="#!">Minimal Style Link</a>
-        <br /><br />
-        <a class="animated" href="#!">Animated Link</a>
-      </div>
-      <div class="column three-fifths">
-        Blast Off contains multiple button styles. Simply apply the button class to an element to use.
-        <br /> You can also use different styles of links. The animated links will automatically disable animation on touch screens.
-        <pre class="html"><code>&lt;button class=&quot;button&quot; href=&quot;#!&quot;&gt;Default Button&lt;/button&gt;
-&lt;button class=&quot;button primary&quot; href=&quot;#!&quot;&gt; Primary Button&lt;/button&gt;
-&lt;button class=&quot;button dark&quot; href=&quot;#!&quot;&gt;Dark Button&lt;/button&gt;
-&lt;a class=&quot;&quot; href=&quot;#!&quot;&gt;Default Link&lt;/a&gt;
-&lt;a class=&quot;nolink&quot; href=&quot;#!&quot;&gt;Minimal Style Link&lt;/a&gt;
-&lt;a class=&quot;animated&quot; href=&quot;#!&quot;&gt;Animated Link&lt;/a&gt;</code></pre>
-      </div>
-    </div>
-
-    <h3 id="grid"><a href="#grid" class="animated">Responsive Grid:</a></h3>
-
-
-
-    <div class="row">
-      <div class="column">
-        <div class="box container">
-          Column
+    <main>
+        <div class="viewport-height">
+            <div class="container row fullheight">
+                <div class="column fullheight">
+                    <div class="vertical-center fullheight"
+                        <span style="transform:rotate(20deg);">
+                            <img src="logo-icon.png" width="70%" class="vertical-wiggle">
+                        </span>
+                    </div>
+                </div>
+                <div class="column fullheight">
+                    <div class="vertical-center fullheight">
+                        <h1>
+                            BlastOff <b class="light">v1</b>
+                            <br>
+                        </h1>
+                        <h2>
+                            The framework you’ve been <b>waiting for.</b>
+                        </h2>
+                        <a href="#whats-new">
+                            <h3>
+                                what's new in v1?
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="box container">
-          Column
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <pre class="box"><code>&lt;button class=&quot;button primary&quot;&gt;Primary Button&lt;/button&gt;
+ &lt;button class=&quot;button dark&quot;&gt;Dark Button&lt;/button&gt;</code></pre>
+                </div>
+                <div class="column">
+                    <button class="button primary">
+                        Primary Button
+                    </button>
+                </div>
+            </div> 
         </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column two-fifths">
-        <div class="box container">
-          Column Two Fifths
-        </div>
-      </div>
-      <div class="column three-fifths">
-        <div class="box container">
-          Column Three Fifths
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column one-third">
-        <div class="box container">
-          Column One Third
-        </div>
-      </div>
-      <div class="column two-thirds">
-        <div class="box container">
-          Column Two Thirds
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column one-fourth">
-        <div class="box container">
-          Column One Fourth
-        </div>
-      </div>
-      <div class="column three-fourths">
-        <div class="box container">
-          Column Three Fourths
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column one-fifth">
-        <div class="box container">
-          Column One Fifth
-        </div>
-      </div>
-      <div class="column four-fifths">
-        <div class="box container">
-          Column Four Fifths
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <br />
-        <pre class="html"><code>&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;column&quot;&gt;
-  &lt;div class=&quot;box&quot;&gt;
-    Column
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;column&quot;&gt;
-  &lt;div class=&quot;box&quot;&gt;
-    Column
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-      <div class="column">
-        <p>
-          Blast Off features a fully responsive grid system. You can put as many columns as you want in a row and they will automatically fill the space. Each column will automatically turn into a row on small screens. Try resizing this window to see the result.
-          The default break point is 700px. You can resize each column by using the following classes:
-          <ul>
-            <li>
-              one-fifth
-            </li>
-            <li>
-              two-fifth
-            </li>
-            <li>
-              three-fifth
-            </li>
-            <li>
-              four-fifth
-            </li>
-            <li>
-              one-fourth
-            </li>
-            <li>
-              three-fourths
-            </li>
-            <li>
-              one-third
-            </li>
-            <li>
-              two-thirds
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div>
-
-    <br />
-    <h3 id="boxes"><a href="#boxes" class="animated">Boxes:</a></h3>
-    <p>
-      Blast Off contains multiple box styles. Each of which can be easily used on a <code>div</code> element.
-      Add the <code>container</code> class to a box to give it padding, or use a div with the <code>container</code>
-      class inside it to give padding to only certain elements.
-    </p>
-
-    <div class="row">
-      <div class="column">
-        <div class="box container">
-          This is a simple box. It has light shadows, and is perfect for a minimalistic design.
-        </div>
-        <br />
-        <div class="box material container">
-          This is a material design box. It has sharp corners, and hard shadows to give it a distinctive feel.
-        </div>
-        <br />
-        <div class="box material deep container">
-          This is a deep material design box. It is elevated above the others to make it stand out.
-        </div>
-        <br />
-        <div class="box material">
-          <div class="container">
-            <h4>Box with image</h4>
-          </div>
-          <img src="box img.jpg" />
-          <div class="container">
-            This is an example of how you can use the <code>container</code> class
-            on something inside the box to give only certain elements padding.
+    </main>
+    <br><br>
+    <footer class="footer">
+        <div class="container">
             <br />
+
+            <div class="row">
+                <div class="column">
+                    This page is <b>open source</b>. Want to improve it? Make a pull request on
+                    <a href="https://github.com/StompRocket/BlastOff" target="_blank" class="minimal"><b>Github.</b></a>
+                </div>
+                <div class="column">
+                    Website is licenced under
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="minimal"><b>CC-BY-NC-SA 4.0</b></a> Blast Off is licenced under the<a href="https://opensource.org/licenses/mit-license.php" target="_blank" class="minimal">
+                    <b>MIT license</b></a>.
+                </div>
+                <div class="column">
+                    Created by Sasha S. with help from Ronan F.
+                </div>
+            </div>
             <br />
-            <small>Photo by <a href="https://unsplash.com/@justinbissonbeck">Justin Bisson Beck</a> on <a href="https://unsplash.com/">Unsplash</a></small>
-          </div>
         </div>
-      </div>
-      <div class="column">
-        <pre><code>&lt;div class=&quot;box&quot;&gt;
-  Default Box
-&lt;/div&gt;
-&lt;br /&gt;
-&lt;div class=&quot;box material&quot;&gt;
-  Material Box
-&lt;/div&gt;
-&lt;br /&gt;
-&lt;div class=&quot;box material deep&quot;&gt;
-  Deep Material Box
-&lt;/div&gt;
+    </footer>
 
-&lt;div class=&quot;box material&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;h4&gt;Box with image&lt;/h4&gt;
-  &lt;/div&gt;
-  &lt;img src=&quot;box img.jpg&quot; /&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    This is an example of how you can use the &lt;code&gt;container&lt;/code&gt; class
-    on something inside the box to give only certain elements padding.
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;small&gt;Photo by &lt;a href=&quot;https://unsplash.com/@justinbissonbeck&quot;&gt;Justin Bisson Beck&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt;&lt;/small&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div>
-    </div>
-
-    <h3><a id="footer" href="#footer" class="animated">Footer:</a></h3>
-
-    <p>
-      The Blast Off footer styling is minimal. It will, however stick to the bottom of the screen if the content is not as long as the window, and will not overlap the content. If you wish, you may add the <code>material</code> class to it to give it
-      a slight top shadow, or <code>material inner</code> for a slight inner shadow, that gives the effect that the footer is slightly below the content.
-    </p>
-
-    <pre class="html"><code>&lt;footer class=&quot;footer&quot;&gt;
-  Material Design footer with inner shadow
-&lt;/footer&gt;</code></pre>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <br />
-
-      <div class="row">
-        <div class="column">
-          This page is <b>open source</b>. Want to improve it? Make a pull request on
-          <a href="https://github.com/StompRocket/BlastOff" target="_blank" class="minimal"><b>Github.</b></a>
-        </div>
-        <div class="column">
-          Website is licenced under
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="minimal"><b>CC-BY-NC-SA 4.0</b></a> Blast Off is licenced under the<a href="https://opensource.org/licenses/mit-license.php" target="_blank" class="minimal">
-          <b>MIT license</b></a>.
-        </div>
-        <div class="column">
-          Created by Sasha S. with help from Ronan F.
-        </div>
-      </div>
-      <br />
-    </div>
-  </footer>
-
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

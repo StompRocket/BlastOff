@@ -1,6 +1,7 @@
 /* @imports here */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,400,700");
 /* SCSS Variables */
 /* Responsive design */
 .container {
@@ -23,17 +24,21 @@
 /* Larger than tablet */
 @media screen and (min-width: 750px) {
   .container {
-    max-width: 700px;
+    max-width: 720px;
     width: auto; } }
 /* Larger than desktop */
 @media screen and (min-width: 1000px) {
   .container {
-    max-width: 850px;
+    max-width: 900px;
     width: auto; } }
 /* Larger than Desktop HD */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 950px;
+    max-width: 1000px;
+    width: auto; } }
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1200px;
     width: auto; } }
 /* Typography */
 p,
@@ -50,25 +55,30 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 12px;
   margin-bottom: 0; }
 
+.light {
+  font-weight: 200; }
+
 html {
   overflow-x: hidden;
-  font-family: Montserrat;
+  font-family: IBM Plex Sans;
   font-weight: light;
   min-height: 100%;
   height: 100%;
   width: 100%; }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 3rem;
+  margin: 0.67em 0;
+  font-weight: 400; }
 
 h2 {
-  font-size: 24px;
-  font-weight: 600; }
+  font-size: 2.5rem;
+  font-weight: 400; }
 
 h3 {
-  font-size: 20px;
-  font-weight: 600; }
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: .5em; }
 
 h4 {
   font-size: 16px;
@@ -83,21 +93,9 @@ h6 {
   font-weight: 600; }
 
 a {
-  color: #4949f4;
-  text-decoration: none;
-  transition: all .2s ease-in;
-  cursor: pointer; }
-  a:hover {
-    transition: all .2s ease-out;
-    box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #4949f4 inset; }
-  a::selection {
-    color: white;
-    background: #4949f4;
-    text-shadow: none; }
-  a:visited {
-    color: #4949f4;
-    text-decoration: none;
-    text-shadow: none; }
+  text-decoration: underline;
+  cursor: pointer;
+  color: #333; }
 
 a.minimal {
   color: #4949f4;
@@ -113,6 +111,18 @@ a.minimal {
   a.minimal:visited {
     color: #4949f4;
     text-decoration: underline; }
+
+.viewport-height {
+  height: 100vh; }
+
+.vertical-center {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center; }
+
+.fullheight {
+  height: 100%; }
 
 /* Grid System */
 .column {
@@ -191,7 +201,7 @@ body {
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #333;
-  font-family: Montserrat;
+  font-family: IBM Plex Sans;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -210,7 +220,7 @@ hr {
   flex-direction: row; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "IBM Plex Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
   padding: 0;
   padding-top: 0.2em;
@@ -245,13 +255,14 @@ pre code {
   max-width: auto;
   padding: 0;
   margin: 0;
-  overflow-x: auto;
+  overflow-x: wrap;
   line-height: inherit;
-  word-wrap: normal; }
+  word-wrap: break-word;
+  white-space: pre-wrap; }
 
-pre code::before,
-pre code::after {
-  content: normal; }
+pre.box code {
+  display: block;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2); }
 
 /* highlight.js highlighting */
 .hljs {
@@ -315,9 +326,8 @@ pre code::after {
 
 /* end highlighting */
 .box {
-  border: 2px solid rgba(189, 195, 199, 0.5);
-  border-radius: 10px;
-  padding: 0px; }
+  padding: 0px;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1); }
 
 .box.material {
   border: 0.5px solid #f9f9f9;
@@ -625,8 +635,7 @@ table tr:nth-child(2n) {
   text-decoration: none;
   vertical-align: middle;
   color: #576574 !important;
-  font-size: .8rem;
-  text-transform: uppercase;
+  font-size: 1rem;
   transition: all .2s ease-out;
   cursor: pointer; }
 
@@ -653,8 +662,7 @@ table tr:nth-child(2n) {
   text-decoration: none;
   vertical-align: middle;
   color: #ffffff !important;
-  font-size: .8rem;
-  text-transform: uppercase; }
+  font-size: 1rem; }
 
 .button.primary:hover {
   background: #546de5;
@@ -675,8 +683,7 @@ table tr:nth-child(2n) {
   text-decoration: none;
   vertical-align: middle;
   color: #ffffff !important;
-  font-size: .8rem;
-  text-transform: uppercase; }
+  font-size: 1rem; }
 
 .button.dark:hover {
   background: #474d59;
@@ -701,8 +708,7 @@ a.button {
   text-decoration: none;
   vertical-align: middle;
   color: #ffffff !important;
-  font-size: .8rem;
-  text-transform: uppercase; }
+  font-size: 1rem; }
 
 .button.blue:hover {
   background: #3434ef;
@@ -773,5 +779,19 @@ footer.footer.material.inner {
 
 .fullwidth {
   width: 100%; }
+
+/* animations */
+@keyframes vertical-wiggle {
+  0% {
+    transform: translateY(10px); }
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(10px); } }
+.vertical-wiggle {
+  animation-name: vertical-wiggle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
 
 /*# sourceMappingURL=blastoff.css.map */

@@ -119,6 +119,9 @@ a.minimal {
 .viewport-height {
   height: 100vh; }
 
+.min-viewport-height {
+  min-height: 100vh; }
+
 .vertical-center {
   display: flex;
   height: 100%;

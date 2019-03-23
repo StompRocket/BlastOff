@@ -1,0 +1,28 @@
+{
+  "name": "@stomprocket/blastoff",
+  "version": "1.0.0",
+  "description": "CSS Framework",
+  "main": "blastoff.min.css",
+  "dependencies": {
+    "sass": "^1.15.2",
+    "uglifycss": "^0.0.29"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass blastoff.scss blastoff.css; uglifycss blastoff.css --output blastoff.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StompRocket/BlastOff.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "swissChili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StompRocket/BlastOff/issues"
+  },
+  "homepage": "https://blastoff.stomprocket.io"
+}

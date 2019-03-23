@@ -8,8 +8,8 @@
 .container {
   margin: auto;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* Mobile first queries */
@@ -161,6 +161,11 @@ a.minimal:visited {
   justify-content: center;
 }
 
+.vertical-padding {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .fullheight {
   height: 100%;
 }
@@ -204,6 +209,10 @@ a.minimal:visited {
 }
 
 @media (max-width: 700px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
   .row {
     flex-direction: column;
     justify-content: space-around;

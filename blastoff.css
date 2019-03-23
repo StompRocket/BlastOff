@@ -563,7 +563,6 @@ table tr:nth-child(2n) {
 
 /* Navbar */
 .navbar {
-  width: 100%;
   background: #f9f9f9;
   overflow: hidden;
   padding: 15px;

@@ -681,7 +681,8 @@ table tr:nth-child(2n) {
   color: #000;
 }
 
-.nav-mobile:target {
+.nav-mobile:target,
+.nav-mobile.open {
   opacity: 1;
   pointer-events: auto;
 }

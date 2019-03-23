@@ -1,8 +1,8 @@
 {
   "name": "@stomprocket/blastoff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS Framework",
-  "main": "blastoff.scss",
+  "main": "blastoff.css",
   "dependencies": {
     "sass": "^1.15.2",
     "uglifycss": "^0.0.29"

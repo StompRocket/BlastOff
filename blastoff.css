@@ -8,8 +8,6 @@
 .container {
   margin: auto;
   position: relative;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 /* Mobile first queries */
